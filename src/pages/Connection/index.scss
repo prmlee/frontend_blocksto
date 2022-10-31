@@ -1,0 +1,38 @@
+div.connection {
+  padding: 32px;
+}
+
+div.connection > div.form p:first-child {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+div.connection > div.form > div {
+  padding-bottom: 32px;
+}
+
+div.connection > div.form p {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+div.connection > div.form input {
+  width: 75%;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: black;
+  font-size: 28px;
+}
+
+div.connection > div.form a {
+  font-size: 32px;
+  text-decoration: underline;
+  text-decoration-color: #808080;
+}
+
+div.connection > div.form a.button {
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 4px 64px;
+}

@@ -1,0 +1,14 @@
+div.title > div {
+  position: absolute;
+  top: 45%;
+  background-color: #04D5B3;
+  width: 37%;
+  height: 50%;
+  z-index: -1;
+}
+
+div.title > p {
+  color: black;
+  font-size: 48px;
+  letter-spacing: 0.075em;
+}
