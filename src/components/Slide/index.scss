@@ -1,0 +1,54 @@
+div.intro {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+div.about {
+  font-size: 20px;
+  color: black;
+  div.content {
+    padding-top: 40px;
+    ul {
+      padding-top: 24px;
+    }
+    p {
+      padding-top: 32px;
+    }
+  }
+}
+
+div.features {
+  div.row {
+    img {
+      width: 30%;
+    }
+    p {
+      padding-top: 24px;
+      font-size: 36px;
+      font-weight: 500;
+      text-align: start;
+    }
+  }
+}
+
+div.features > div.row {
+  padding-top: 32px;
+}
+
+img.house {
+  width: 100%;
+}
+
+.intro-text {
+  font-size: 64px;
+  text-align: left;
+  line-height: 1.2 ;
+}
+
+p.button {
+  border-radius: 28px;
+  padding: 4px 16px;
+  color: black;
+  font-size: 32px;
+  width: fit-content;
+}
