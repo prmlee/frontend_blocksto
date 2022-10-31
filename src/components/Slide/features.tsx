@@ -1,11 +1,10 @@
-import Title from "../Others/title";
-import "./index.scss";
+import Title from '../Others/title';
+import './index.scss';
 
-const FeaturesSlide = () =>
-{ 
+const FeaturesSlide = () => {
   return (
     <div className="features">
-      <Title text="Comment cela marche ?"/>
+      <Title text="Comment cela marche ?" />
       <div className="row">
         <div className="col d-flex flex-row align-items-start">
           <img src="./images/profil.svg" />
@@ -21,7 +20,7 @@ const FeaturesSlide = () =>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default FeaturesSlide;

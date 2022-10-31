@@ -1,8 +1,3 @@
-const Profile = () => { 
-  
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Profile = () => {
+  return <div></div>;
+};

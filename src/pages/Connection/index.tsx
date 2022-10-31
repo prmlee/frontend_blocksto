@@ -1,7 +1,6 @@
-import "./index.scss";
+import './index.scss';
 
-const Connection = () =>
-{ 
+const Connection = () => {
   return (
     <div className="row align-items-end connection">
       <div className="col-8 form">
@@ -14,13 +13,15 @@ const Connection = () =>
           <p>ou</p>
           <a href="/register">Créer un compte</a>
         </div>
-        <a href="#" className="button bg-pink" role="button">Valider</a>
+        <a href="#" className="button bg-pink" role="button">
+          Valider
+        </a>
       </div>
       <div className="col-4">
         <img className="house" src="./images/house.png" alt="" />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Connection;

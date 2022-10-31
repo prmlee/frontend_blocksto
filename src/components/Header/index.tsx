@@ -1,6 +1,6 @@
-import "./header.scss";
+import './header.scss';
 
-const Header = () => { 
+const Header = () => {
   return (
     <div className="row align-items-center">
       <div className="col">
@@ -10,11 +10,15 @@ const Header = () => {
         </a>
       </div>
       <div className="col d-flex justify-content-end">
-        <a href="/" className="button">Accueil</a>
-        <a href="/connection" className="button bg-pink" role="button">Connexion</a>
+        <a href="/" className="button">
+          Accueil
+        </a>
+        <a href="/connection" className="button bg-pink" role="button">
+          Connexion
+        </a>
       </div>
     </div>
   );
-}
+};
 
 export default Header;
