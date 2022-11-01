@@ -23,7 +23,7 @@ div.notebook-panel > div.notebook-list {
 div.create-panel {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   margin-top: 24px;
 }
 
