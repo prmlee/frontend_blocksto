@@ -29,7 +29,7 @@ const Register = () => {
       <BaseInput label="Email" required />
       <BaseInput label="Identifiant Blocksto" required />
       <BaseInput label="Mot de passe Blocksto" required />
-      <a href="#" className="align-self-center button bg-pink" role="button">
+      <a href="/" className="align-self-center button bg-pink" role="button">
         Valider
       </a>
     </div>

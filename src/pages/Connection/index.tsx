@@ -13,7 +13,7 @@ const Connection = () => {
           <p>ou</p>
           <a href="/register">Créer un compte</a>
         </div>
-        <a href="#" className="button bg-pink" role="button">
+        <a href="/" className="button bg-pink" role="button">
           Valider
         </a>
       </div>

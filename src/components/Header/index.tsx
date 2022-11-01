@@ -5,7 +5,7 @@ const Header = () => {
     <div className="row align-items-center">
       <div className="col">
         <a href="/" className="d-flex align-items-center">
-          <img src="./images/logo.png" />
+          <img src="./images/logo.png" alt="this is a logo" />
           <span className="logo-text">BLOCKSTO</span>
         </a>
       </div>

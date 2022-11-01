@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { notebooksData } from '../../constants';
 import { SearchInput } from '../Input/search';
 import CreateNotebook from './house/create';

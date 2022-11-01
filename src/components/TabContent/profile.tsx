@@ -1,12 +1,9 @@
-import { useState } from 'react';
-import { profileElements, ProfileInterface } from '../../constants';
-import { ProfileData } from '../../mock';
+import { profileElements } from '../../constants';
+import { profileData } from '../../mock';
 import { NormalInput } from '../Input';
 import './index.scss';
 
 const Profile = () => {
-  const [profileData, setProfileData] = useState<ProfileInterface>(ProfileData);
-
   return (
     <div className="profile">
       <img
