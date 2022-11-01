@@ -1,0 +1,56 @@
+div.payment {
+  margin-top: 32px;
+}
+
+div.payment > p {
+  font-size: 48px;
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+div.payment > div.panel {
+  width: 80%;
+  margin: auto;
+}
+
+div.payment > div.panel > div:first-child > p {
+  letter-spacing: 0.15rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+img.credit-card-icon {
+  width: 48px;
+  margin-right: 12px;
+}
+
+img.credit-card-icon + span {
+  font-size: 32px;
+}
+
+div.panel > p {
+  text-align: left;
+  margin-top: 24px;
+}
+
+div.panel > div.form-group > div {
+  margin-top: 24px;
+}
+
+div.panel > div.form-group > p {
+  text-align: left;
+  margin-top: 24px;
+  margin-left: 42px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+div.agreement > input[type='checkbox'] {
+  width: 32px;
+  border: 1px solid black;
+  margin-right: 12px;
+}
+
+div.agreement > span {
+  font-size: 20px;
+}

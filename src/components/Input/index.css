@@ -1,0 +1,106 @@
+div.base-input {
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+  background-color: #c0c0c0;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+}
+
+div.normal-input {
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 4px 12px;
+  margin-top: 12px;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+}
+
+div.search-input {
+  border-radius: 6px;
+  border: 1px solid gray;
+  padding: 12px;
+  width: 50%;
+  font-size: 18px;
+}
+
+div.detailed-input {
+  font-size: 24px;
+  text-align: left;
+}
+
+div.checkbox {
+  width: fit-content;
+}
+
+div.base-input > span,
+div.normal-input > span {
+  flex-shrink: 0;
+  padding-right: 24px;
+}
+
+div.base-input > input[type='text'],
+div.base-input > input[type='number'],
+div.base-input > input[type='email'],
+div.base-input > textarea {
+  flex: 1;
+  margin-right: 24px;
+  background-color: #c0c0c0;
+  border: none;
+  width: inherit;
+  resize: none;
+}
+
+div.base-input > textarea::-webkit-scrollbar {
+  width: 16px;
+}
+
+div.base-input > textarea::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: white;
+}
+
+div.base-input > textarea::-webkit-scrollbar-thumb {
+  background-color: #fd2d93;
+  border-radius: 6px;
+  width: 12px;
+}
+
+div.normal-input > input[type='text'],
+div.normal-input > input[type='number'],
+div.normal-input > input[type='email'],
+div.search-input > input {
+  flex: 1;
+  margin-right: 24px;
+  border: none;
+  width: inherit;
+}
+
+div.base-input > input[type='checkbox'] {
+  width: 32px;
+  height: 32px;
+}
+
+div.detailed-input > input {
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+}
+
+div.detailed-input > input + span {
+  font-size: 18px;
+}
+
+div.base-input > input:focus-visible,
+div.base-input > textarea:focus-visible,
+div.normal-input > input:focus-visible,
+div.search-input > input:focus-visible {
+  outline: none;
+}
+
+div.search-input > img {
+  width: 30px;
+  margin-right: 8px;
+  filter: invert(62%) sepia(30%) saturate(3727%) hue-rotate(128deg);
+}
