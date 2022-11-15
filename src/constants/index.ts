@@ -9,10 +9,30 @@ export interface ProfileElementInterface {
 }
 
 export type Notebook = {
+  id: string;
   title: string;
-  location: string;
+  location: LocInfo;
   to: string;
 };
+
+export type LocInfo = {
+  lat: number;
+  lng: number;
+};
+
+export type Category = {
+  id: string;
+  title: string;
+};
+
+export type Document = {
+  id: string;
+  title: string;
+  notebook: Notebook;
+  created_date: Date;
+  storage: number;
+  to: string;
+}
 
 export const profileElements: ProfileElementInterface[] = [
   { title: 'company', label: 'Entreprise', required: true },
@@ -21,27 +41,4 @@ export const profileElements: ProfileElementInterface[] = [
   { title: 'firstname', label: 'Prénom', required: false },
   { title: 'address', label: 'Adresse', required: false },
   { title: 'email', label: 'Email', required: false },
-];
-
-export const notebooksData: Notebook[] = [
-  {
-    title: 'Carnet du 63 bis rue Damrémont',
-    location: 'Street 06',
-    to: 'xyz.abc@gmail.com',
-  },
-  {
-    title: 'Carnet du 2 rue Saint Antoine',
-    location: 'Street 06',
-    to: 'xyz.abc@gmail.com',
-  },
-  {
-    title: 'Carnet du 5 place de la révolution',
-    location: 'Street 06',
-    to: 'xyz.abc@gmail.com',
-  },
-  {
-    title: 'Carnet du 6 avenue Kleber',
-    location: 'Street 06',
-    to: 'xyz.abc@gmail.com',
-  },
 ];

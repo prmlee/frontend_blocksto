@@ -4,27 +4,51 @@ div.icon-button {
   align-items: center;
   margin-bottom: 16px;
 }
-
 div.icon-button > img {
   width: 90px;
   padding: 0px 10px 10px 10px;
   cursor: pointer;
 }
-
 div.icon-button > img:hover,
 div.icon-button > img.selected {
   filter: invert(30%) sepia(72%) saturate(2177%) hue-rotate(309deg);
 }
-
 div.icon-button > img.mini {
   width: 60px;
   padding: 0px 10px 10px 10px;
 }
-
 div.icon-button > span {
   font-size: 18px;
 }
-
 div.icon-button > span.mini {
   font-size: 12px;
+}
+
+div.normal-button {
+  border-radius: 24px;
+  border: none;
+  background-color: #fd2d93;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 6px 48px;
+  width: fit-content;
+  cursor: pointer;
+}
+div.normal-button:active,
+div.normal-button:focus {
+  border: none;
+}
+
+div.category-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 24px;
+  width: 234px;
+  height: 136px;
+  margin: 24px 24px 24px 0px;
+  cursor: pointer;
 }

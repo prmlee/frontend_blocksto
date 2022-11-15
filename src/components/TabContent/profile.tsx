@@ -16,7 +16,7 @@ const Profile = () => {
             label={element.label}
             required={element.required}
             value={profileData[element.title] || ''}
-            key={`normal-input-${index}`}
+            key={`profile-normal-input-${index}`}
           />
         ))}
       </div>

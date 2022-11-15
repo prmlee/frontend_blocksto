@@ -10,7 +10,7 @@ const Title = (props: TitleProp) => {
   return (
     <div className="d-flex align-items-center position-relative title">
       <p>{text}</p>
-      <div />
+      <div></div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { IconButton, MiniIconButton } from '../../components/Button';
 import House from '../../components/TabContent/house';
 import Profile from '../../components/TabContent/profile';
+import { UiContext } from '../../context/ui';
 import './index.scss';
 
 interface TabInterface {
@@ -9,18 +10,19 @@ interface TabInterface {
 }
 
 const Main = () => {
-  const [selectedTab, setSelectedTab] = useState<string>('profile');
+  const { selectedHousePanel, moveToHousePanel } = useContext(UiContext);
+  const [selectedTab, setSelectedTab] = useState<string>('house');
 
   const handleTab = (tab: string) => {
     setSelectedTab(tab);
+    moveToHousePanel('notebook-panel');
   };
-
-  const handleAdd = () => {};
 
   const tabContents: TabInterface = {
     profile: <Profile />,
     house: <House />,
     envelope: <div>Envelope</div>,
+    send: <div>Send</div>,
   };
 
   return (
@@ -49,13 +51,18 @@ const Main = () => {
       <div className="col-2">
         <MiniIconButton
           title="Ajouter un document"
+          selected={selectedHousePanel === 'add-panel'}
           src="./images/plus.svg"
-          handleClick={() => handleAdd()}
+          handleClick={() => {
+            setSelectedTab('house');
+            moveToHousePanel('add-panel');
+          }}
         />
         <MiniIconButton
           title="Partager un document"
+          selected={selectedTab === 'send'}
           src="./images/send.svg"
-          handleClick={() => handleAdd()}
+          handleClick={() => handleTab('send')}
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { BaseInput } from '../../Input';
 
-const CreateNotebook = () => {
+const CreateNotebookPanel = () => {
   return (
     <div className="create-panel">
       <p>Création de votre nouveau carnet</p>
@@ -20,4 +20,4 @@ const CreateNotebook = () => {
   );
 };
 
-export default CreateNotebook;
+export default CreateNotebookPanel;

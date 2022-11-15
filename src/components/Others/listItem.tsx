@@ -1,21 +1,38 @@
-import { Notebook } from '../../constants';
+import { useContext } from 'react';
+import { LocInfo, Notebook } from '../../constants';
+import { UiContext } from '../../context/ui';
 
-export const NotebookListItem = (props: Notebook) => {
-  const { title, location, to } = props;
+type NotebookListItemProps = {
+  setCenter: (center: LocInfo) => void;
+} & Notebook;
+
+export const NotebookListItem = (props: NotebookListItemProps) => {
+  const { moveToHousePanel, selectBook, selectCategory } =
+    useContext(UiContext);
+  const { title, location, to, setCenter } = props;
 
   return (
     <div className="notebook-list-item">
-      <div>
-        <img src="./images/notebook.svg" alt="" />
+      <div
+        onClick={() => {
+          moveToHousePanel('consult-panel');
+          selectBook(title);
+          selectCategory('');
+        }}
+      >
+        <img src="./images/notebook.svg" alt="go to docments category" />
         <span>{title}</span>
       </div>
       <div>
-        <a href={`https://map.google.com/${location}`}>
-          <img src="./images/pin.svg" alt="go to google map" />
-        </a>
-        <a href={`mail:to//${to}`}>
-          <img src="./images/send.svg" alt="send" />
-        </a>
+        <img
+          src="./images/pin.svg"
+          alt="go to google map"
+          onClick={() => {
+            moveToHousePanel('gmap-panel');
+            setCenter(location);
+          }}
+        />
+        <img src="./images/send.svg" alt="send" />
       </div>
     </div>
   );

@@ -23,13 +23,24 @@ div.notebook-list-item {
   margin-top: 24px;
   padding: 6px 24px;
 }
-
+div.notebook-list-item > div:first-child {
+  cursor: pointer;
+}
 div.notebook-list-item > div:first-child > img {
   width: 48px;
   margin-right: 24px;
 }
-
-div.notebook-list-item > div:last-child > a > img {
+div.notebook-list-item > div:last-child > img {
   width: 32px;
   margin-right: 12px;
+  cursor: pointer;
+}
+
+div.pathbar > div > img {
+  width: 48px;
+  margin-right: 24px;
+}
+div.pathbar > div > span {
+  font-size: 24px;
+  margin-right: 24px;
 }

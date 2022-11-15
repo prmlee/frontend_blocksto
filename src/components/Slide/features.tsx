@@ -11,11 +11,11 @@ const FeaturesSlide = () => {
           <p>Identifiez-vous</p>
         </div>
         <div className="col d-flex flex-row align-items-start">
-          <img src="./images/profile.svg" alt="this is a profile svg" />
+          <img src="./images/folder.svg" alt="this is a profile svg" />
           <p>Créez votre carnet BLOCKSTO</p>
         </div>
         <div className="col d-flex flex-row align-items-start">
-          <img src="./images/profile.svg" alt="this is a profile svg" />
+          <img src="./images/plus.svg" alt="this is a profile svg" />
           <p>Stockez et partagez vos informations sans limite</p>
         </div>
       </div>

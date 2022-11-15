@@ -44,13 +44,22 @@ div.normal-input > span {
 div.base-input > input[type='text'],
 div.base-input > input[type='number'],
 div.base-input > input[type='email'],
-div.base-input > textarea {
+div.base-input > input[type='file'], div.base-input > textarea {
   flex: 1;
   margin-right: 24px;
   background-color: #c0c0c0;
   border: none;
   width: inherit;
   resize: none;
+}
+div.base-input > input[type='file']::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 0px;
+}
+div.base-input > input[type='file']::before {
+  content: url('../../../public/images/uncircled-plus.svg');
+  border: none;
+  cursor: pointer;
 }
 
 div.base-input > textarea::-webkit-scrollbar {

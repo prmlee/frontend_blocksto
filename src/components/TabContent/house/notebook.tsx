@@ -1,18 +1,22 @@
-import { Notebook } from '../../../constants';
+import { useContext } from 'react';
+import { LocInfo, Notebook } from '../../../constants';
+import { UiContext } from '../../../context/ui';
 import { NotebookListItem } from '../../Others/listItem';
 import './index.css';
 
 const NotebookPanel = (props: {
   data: Notebook[];
-  handleStats(arg: string): void;
+  setCenter: (center: LocInfo) => void;
 }) => {
-  const { data, handleStats } = props;
+  const { moveToHousePanel } = useContext(UiContext);
+  const { data, setCenter } = props;
+
   return (
     <div className="notebook-panel">
       <button
         className="create"
         onClick={() => {
-          handleStats('create-panel');
+          moveToHousePanel('create-panel');
         }}
       >
         <img src="./images/uncircled-plus.svg" alt="" />
@@ -21,10 +25,12 @@ const NotebookPanel = (props: {
       <div className="notebook-list">
         {data.map((notebook, index) => (
           <NotebookListItem
+            id={notebook.id}
             title={notebook.title}
             location={notebook.location}
             to={notebook.to}
             key={`notebook-${index}`}
+            setCenter={setCenter}
           />
         ))}
       </div>
